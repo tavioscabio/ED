@@ -1,11 +1,8 @@
+//1. Criar uma funÃ§Ã£o recursiva que receba 2 valores A e B e, por somas, apresente o resultado da
+//multiplicaÃ§Ã£o de A por B.
+
 package Ex01;
-
 import javax.swing.JOptionPane;
-
-//1. Criar uma função recursiva que receba 2 valores A e B e, por somas, apresente o resultado da
-//multiplicação de A por B.
-
-
 public class Main {
 	public static void main(String[] args) {
 		
@@ -15,8 +12,19 @@ public class Main {
 	int b = Integer.parseInt(JOptionPane.showInputDialog("Insira um valor para B"));
 	int aux = 0;	
 		int resultado = inst.multsoma(a,b,aux);
-		
 		System.out.println(resultado);
 	}
 
+}
+------------------------------------------------------------------------------------------------------------
+package Ex01;
+public class controller {
+	public int multsoma (int A, int B, int aux){
+		if (A==0) {
+			return aux;
+		}else {
+			aux = aux+B;
+			return multsoma(A-1, B, aux);
+		}
+	}
 }

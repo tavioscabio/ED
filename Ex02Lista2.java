@@ -1,5 +1,6 @@
 //Criar uma função recursiva que receba o dividendo e o divisor de uma operção de divisão e, por subtrações, exiba o 
 //resto da divisão
+package ex02;
 import javax.swing.JOptionPane;
 public class Main {
   public static void main(String[]Args){
@@ -14,7 +15,8 @@ public class Main {
   }
 }
 ----------------------------------------------------------------------------------------------------------------------------
-public class controller{
+package ex02;
+  public class controller{
   public int funcao(int divisor,int dividendo){
     if (divisor<dividendo){
       return dividendo;
